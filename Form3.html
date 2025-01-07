@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+
+<h2>Feedback and Suggestion Form</h2>
+<form>
+    <fieldset>
+        <table border="0">
+            <tr>
+                <td><label for="name">Your Name:</label></td>
+                <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+            </tr>
+            <tr>
+                <td><label>How was your experience?</label></td>
+                <td>
+                    <label><input type="radio" name="experience" value="excellent" required> Excellent</label>
+                    <label><input type="radio" name="experience" value="good"> Good</label>
+                    <label><input type="radio" name="experience" value="average"> Average</label>
+                    <label><input type="radio" name="experience" value="poor"> Poor</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="suggestions">Suggestions/Comments:</label></td>
+                <td><textarea id="suggestions" name="suggestions" rows="4" placeholder="Share your feedback or suggestions"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Would you recommend us to others?</label></td>
+                <td>
+                    <select name="recommend" required>
+                        <option value="">-- Select an option --</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="maybe">Maybe</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Which area can we improve on?</label></td>
+                <td>
+                    <select name="improvement" required>
+                        <option value="">-- Select an option --</option>
+                        <option value="customer-service">Customer Service</option>
+                        <option value="product-quality">Product Quality</option>
+                        <option value="delivery-speed">Delivery Speed</option>
+                        <option value="pricing">Pricing</option>
+                        <option value="others">Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Submit Feedback</button>
+                </td>
+                <td>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+
+</body>
+</html>
